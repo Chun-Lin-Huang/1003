@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;                /* ⬅️ 滿版高度是關鍵 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #fcd34d;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1d4ed8;
+}
+
+main {
+    flex: 1;                     /* ⬅️ 撐開中間區域空間 */
+    padding: 30px;
+}
+
+h1 {
+    color: #111827;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fde68a;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== 下拉選單 select 樣式 ===== */
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* ===== 單選與多選按鈕（radio, checkbox） ===== */
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;               /* 不要滿版寬度 */
+    margin-right: 5px;         /* 選項與文字之間留點空隙 */
+    vertical-align: middle;    /* 與文字對齊 */
+}
+
+/* ===== 單選與多選標籤的排版美化（讓整齊一點） ===== */
+form p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 小補充：讓 label 和 input 垂直對齊 */
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* 額外可選：讓整個欄位排版更寬鬆一點 */
+form {
+    max-width: 600px;
+    margin: 0 auto; /* 水平置中表單 */
+}
